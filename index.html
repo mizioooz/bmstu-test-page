@@ -127,17 +127,20 @@
             }
 
             .btn {
-                width: calc(100% - 20px); /* Кнопки на всю ширину с учетом отступов */
-                margin-bottom: 10px; /* Отступ между кнопками */
-            }
-
-	    .full-width-section {
-            	padding: 10px;
+                width: auto; /* Авто ширина для кнопок */
+                margin: 0; /* Убрали отступы */
             }
 
             .content-overlay {
                 padding: 30px; /* Уменьшение отступов */
                 text-align: center; /* Центрирование текста и кнопки на мобильных устройствах */
+            }
+
+            .buttons {
+                display: flex; /* Flexbox для кнопок */
+                justify-content: center; /* Центрирование кнопок */
+                flex-direction: column; /* Вертикальное расположение кнопок */
+                align-items: center; /* Центрирование по горизонтали */
             }
         }
 
@@ -177,7 +180,9 @@
             <div class="content-overlay">
                 <h1>Образовательные программы</h1>
                 <p>Кафедра ИУК2 предлагает современные образовательные программы, сочетающие фундаментальные знания и практические навыки в области информационных технологий и систем управления.</p>
-                <a href="#programs" class="btn">Узнать больше</a>
+                <div class="buttons">
+                    <a href="#programs" class="btn">Узнать больше</a>
+                </div>
             </div>
         </section>
     </div>
