@@ -66,6 +66,7 @@
             border-radius: 4px;
             font-weight: 600;
             margin-right: 10px;
+            margin-bottom: 10px; /* Отступ снизу */
         }
         
         .btn:hover {
@@ -105,7 +106,7 @@
 
             .hero {
                 grid-template-columns: 1fr; /* Один столбец */
-                min-height: 400px; /* Уменьшение высоты */
+                min-height: 300px; /* Уменьшение высоты */
             }
             
             .hero-content {
@@ -120,8 +121,12 @@
                 font-size: 1rem; /* Уменьшение размера текста */
             }
 
+            .hero-image {
+                height: 200px; /* Установка фиксированной высоты для изображения на мобильных устройствах */
+            }
+
             .btn {
-                width: 100%; /* Кнопки на всю ширину */
+                width: calc(100% - 20px); /* Кнопки на всю ширину с учетом отступов */
                 margin-bottom: 10px; /* Отступ между кнопками */
             }
 
